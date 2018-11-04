@@ -24,6 +24,7 @@ create_symlinks() {
         "git/gitattributes"
         "git/gitconfig"
         "git/gitignore"
+        "git/tigrc"
 
         "tmux/tmux.conf"
 
