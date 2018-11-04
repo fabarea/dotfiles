@@ -1,4 +1,4 @@
-# [Cătălin](https://github.com/fabarea)’s dotfiles
+# [Fabien](https://github.com/fabarea)’s dotfiles
 
 These are the base dotfiles that I start with when I set up a
 new environment. For more specific local needs I use the `.local`
@@ -59,10 +59,17 @@ Setup process in action:
 
 * import gpg with existing keys
 * import fish configuration (todo include in this repository)
-* import tigrc (todo include in this repository)
 * import ssh keys
 * adjust gitconfig.local
 
+## To be added in .gitconfig.local
+```
+[user]
+	name = Fabien Udriot
+	email = fabien@omic.ch
+	date = YYYY
+	signingkey = CB19DB9BAB632A27
+```
 ## Screenshots
 
 ### Git
