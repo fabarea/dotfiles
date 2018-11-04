@@ -6,7 +6,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Image Tools\n\n"
+print_in_purple "\n   Applications\n\n"
 
-# install_package "GIMP" "gimp"
-install_package "ImageMagick" "imagemagick"
+if [[ $DISPLAY ]]; then
+  install_package "Transmission" "transmission"
+  install_package "VLC" "vlc"
+fi

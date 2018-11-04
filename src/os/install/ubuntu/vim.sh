@@ -5,4 +5,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-install_package "GNOME Vim" "vim-gnome"
+if [[ $DISPLAY ]]; then
+  install_package "GNOME Vim" "vim-gnome"
+fi

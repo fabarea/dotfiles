@@ -52,7 +52,8 @@ main() {
     printf "\n"
 
     install_plugins
-    update_plugins
+    # Script is stopping at this step. So we comment the line. As simple as that!
+    #update_plugins
 
 }
 

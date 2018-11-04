@@ -17,6 +17,9 @@ source_bash_files() {
                       # not be under version control.
     )
 
+    export PATH="$HOME/.phpenv/bin:$PATH"
+    eval "$(phpenv init -)"
+
     local file=""
     local i=""
 
@@ -56,3 +59,6 @@ unset -f source_bash_files
 # and time of the last login, the message of the day, etc.).
 
 clear
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

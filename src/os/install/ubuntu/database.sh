@@ -6,7 +6,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Compression Tools\n\n"
+print_in_purple "\n   Database\n\n"
 
-install_package "Brotli" "brotli"
-install_package "Zopfli" "zopfli"
+install_package "MySQL" "mysql-server"

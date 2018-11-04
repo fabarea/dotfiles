@@ -29,6 +29,9 @@ main() {
     printf "\n"
 
     install_npm_package "!nstant-markdown-d" "instant-markdown-d"
+    install_npm_package "gatsby-cli" "gatsby-cli"
+    install_npm_package "netlify-cli" "netlify-cli"
+    install_npm_package "parcel-bundler" "parcel-bundler"
 
 }
 
