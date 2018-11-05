@@ -60,15 +60,25 @@ Setup process in action:
 * import gpg with existing keys
 * import fish configuration (todo include in this repository)
 * import ssh keys
-* adjust gitconfig.local
+* adjust .gitconfig.local by adding
 
-## To be added in .gitconfig.local
 ```
 [user]
 	name = Fabien Udriot
 	email = fabien@omic.ch
 	date = YYYY
 	signingkey = CB19DB9BAB632A27
+
+[commit]
+	gpgsign = true
+```
+
+* Import gpg keys
+
+```
+    cd my/keys
+    gpg --import my-secret-keyring.gpg
+    gpg --import-options import-local-sigs my-public-keyring.gpg
 ```
 ## Screenshots
 
