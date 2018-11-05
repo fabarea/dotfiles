@@ -142,6 +142,12 @@
         git reset --soft \"HEAD~$n\"; \
     }; f"
 
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
 
 [color "branch"]
 
@@ -159,12 +165,6 @@
 
     newMoved = cyan
     oldMoved = blue
-
-[color "status"]
-
-    added = green reverse
-    changed = yellow reverse
-    untracked = red reverse
 
 [core]
 
@@ -229,13 +229,7 @@
     path = ~/.gitconfig.local
 
 [url "ssh://fab1en@review.typo3.org:29418"]
-	pushInsteadOf = git://git.typo3.org
-[color]
-	ui = auto
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
+    pushInsteadOf = git://git.typo3.org
 
 [mergetool]
 	keepBackup = true
@@ -245,5 +239,3 @@
 	stat = true
 # [push]
 # 	default = simple
-[commit]
-	gpgsign = true
