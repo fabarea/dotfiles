@@ -8,7 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.bash.local"
 declare -r PYTHON_DIRECTORY="$HOME/.pyenv"
 declare -r PYTHON_GIT_REPO_URL="https://github.com/pyenv/pyenv.git"
-declare -r PYTHON3_VERSION="3.7.1"
+declare -r PYTHON3_VERSION="anaconda3-5.3.0" 3.7.1
 declare -r PYTHON2_VERSION="anaconda2-5.3.0" #2.7.15
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -42,11 +42,20 @@ install_latest_stable_python() {
     # pyenv install --list
     execute \
         ". $LOCAL_SHELL_CONFIG_FILE \
-            && $HOME/.pyenv/bin/pyenv install $PYTHON2_VERSION --skip-existing \
-            && $HOME/.pyenv/bin/pyenv install $PYTHON3_VERSION --skip-existing\
-            && $HOME/.pyenv/bin/pyenv global $PYTHON2_VERSION \
-            && $HOME/.pyenv/bin/pyenv rehash" \
-        "python (install latest PYTHON)"
+            && $HOME/.pyenv/bin/pyenv install $PYTHON2_VERSION --skip-existing" \
+        "python (install $PYTHON2_VERSION)"
+
+        execute \
+            ". $LOCAL_SHELL_CONFIG_FILE \
+                && $HOME/.pyenv/bin/pyenv install $PYTHON3_VERSION --skip-existing" \
+            "python (install latest $PYTHON3_VERSION)"
+
+        execute \
+            ". $LOCAL_SHELL_CONFIG_FILE \
+                && $HOME/.pyenv/bin/pyenv global $PYTHON2_VERSION \
+                && $HOME/.pyenv/bin/pyenv rehash" \
+            "python (activate $PYTHON2_VERSION)"
+
 }
 
 install_python() {
