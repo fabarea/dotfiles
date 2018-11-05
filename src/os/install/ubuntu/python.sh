@@ -8,7 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.bash.local"
 declare -r PYTHON_DIRECTORY="$HOME/.pyenv"
 declare -r PYTHON_GIT_REPO_URL="https://github.com/pyenv/pyenv.git"
-declare -r PYTHON3_VERSION="anaconda3-5.3.0" 3.7.1
+declare -r PYTHON3_VERSION="anaconda3-5.3.0" #3.7.1
 declare -r PYTHON2_VERSION="anaconda2-5.3.0" #2.7.15
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
