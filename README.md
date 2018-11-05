@@ -57,9 +57,22 @@ Setup process in action:
 
 ## Next step
 
-* import gpg with existing keys
-* import fish configuration (todo include in this repository)
+* todo: atom with followin package
+
+```
+    apm formatter
+    apm expand-region
+```
+
+* todo: add fish configuration
 * import ssh keys
+
+```
+    cd my/ssh
+    mv ssh ~/.ssh
+    chmod 600 ~/.ssh/*
+```
+
 * adjust .gitconfig.local by adding
 
 ```
