@@ -19,6 +19,8 @@ understand [what it does](src/os/setup.sh). Seriously, **DON'T**!)
 
 That's it! :sparkles:
 
+This will install in your home the following directory `~/.dotfiles`. A custom setup can be triggered again with the command `~/.dotfiles/src/os/setup.sh`.
+
 The setup process will:
 
 * Download the dotfiles on your computer (by default it will suggest
