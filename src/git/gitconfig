@@ -171,7 +171,7 @@
     abbrev = 12
     attributesfile = ~/.gitattributes
     autocrlf = input
-    editor = vim
+    editor = mcedit
     excludesfile = ~/.gitignore
 
     #autocrlf = input
