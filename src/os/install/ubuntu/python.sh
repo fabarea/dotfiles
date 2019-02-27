@@ -30,9 +30,7 @@ fi'
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     execute \
-        "printf '%s' '$CONFIGS' >> $LOCAL_SHELL_CONFIG_FILE \
-            && . $LOCAL_SHELL_CONFIG_FILE" \
-        "python (update $LOCAL_SHELL_CONFIG_FILE)"
+        "printf '%s' '$CONFIGS' >> $LOCAL_SHELL_CONFIG_FILE"
 }
 
 install_latest_stable_python() {
