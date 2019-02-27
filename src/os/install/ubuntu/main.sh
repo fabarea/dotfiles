@@ -16,7 +16,7 @@ upgrade
 ./git.sh
 ./database.sh
 ./php.sh
-./python.sh
+#./python.sh
 ./image_tools.sh
 ./application.sh
 ./misc.sh
