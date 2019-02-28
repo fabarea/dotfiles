@@ -9,15 +9,11 @@ files described in the [`Local Settings`](#local-settings) section.
 To set up the `dotfiles` just run the appropriate snippet in the
 terminal:
 
-(:warning: **DO NOT** run the `setup` snippet if you don't fully
-understand [what it does](src/os/setup.sh). Seriously, **DON'T**!)
-
 | OS | Snippet |
 |:---|:---|
 | `macOS` | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
 
-That's it! :sparkles:
 
 This will install in your home the following directory `~/.dotfiles`. A custom setup can be triggered again with the command `~/.dotfiles/src/os/setup.sh`.
 
