@@ -37,8 +37,9 @@ install_latest_stable_php() {
     # (this will also set it as the default).
 
     # PHP version as of this writing
+    # @see php.net/downloads.php
     # 7.2.10
-    # 7.1.21
+    # 7.1.26
     # 7.0.31
     # 5.6.37
     # To consult all PHP versions:
@@ -46,7 +47,7 @@ install_latest_stable_php() {
 
     execute \
         ". $LOCAL_SHELL_CONFIG_FILE \
-            && $HOME/.phpenv/bin/phpenv install 7.2.10 \
+            && $HOME/.phpenv/bin/phpenv install 7.1.26 \
             && $HOME/.phpenv/bin/phpenv rehash" \
         "php (install latest PHP)"
 }
@@ -89,9 +90,14 @@ main() {
     fi
 
     # Compilation returns an error... Replacing by package
-    #install_latest_stable_php
-    install_package "PHP 7.2 from APT" "php7.2"
-
+    install_latest_stable_php
+    
+    #install_package "PHP system installed from APT" "php"
+    ##install_package "Pecl system installed from APT" "php-pear"
+    #install_package "php-mbstring from APT" "php-mbstring"
+    #install_package "php-intl from APT" "php-intl"
+    #install_package "Composer" "composer"
+        
 }
 
 main
