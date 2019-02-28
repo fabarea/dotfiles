@@ -20,10 +20,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./keyboard.sh
 ./language_and_region.sh
 ./maps.sh
-./photos.sh
-./safari.sh
+#./photos.sh
+#./safari.sh
 ./terminal.sh
-./textedit.sh
+#./textedit.sh
 ./trackpad.sh
-./transmission.sh
+#./transmission.sh
 ./ui_and_ux.sh
