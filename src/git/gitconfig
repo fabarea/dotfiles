@@ -237,5 +237,9 @@
 	rebase = true
 [rebase]
 	stat = true
-# [push]
-# 	default = simple
+
+[commit]
+  gpgsign = true
+
+[pull]
+  rebase = true
