@@ -9,7 +9,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./xcode.sh
 ./homebrew.sh
 ./bash.sh
-exit
+
 #./../nvm.sh
 
 ./browsers.sh
@@ -17,6 +17,7 @@ exit
 ./git.sh
 ./gpg.sh
 ./image_tools.sh
+./http_server.sh
 ./misc.sh
 ./misc_tools.sh
 #./../npm.sh
