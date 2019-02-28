@@ -48,6 +48,19 @@ install_package() {
 
 }
 
+brew_install() {
+
+    declare -r PACKAGE="$2"
+    declare -r PACKAGE_READABLE_NAME="$1"
+
+    if ! package_is_installed "$PACKAGE"; then
+        execute "brew install $PACKAGE" "$PACKAGE_READABLE_NAME"
+    else
+        print_success "$PACKAGE_READABLE_NAME"
+    fi
+
+}
+
 package_is_installed() {
     dpkg -s "$1" &> /dev/null
 }

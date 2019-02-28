@@ -15,7 +15,10 @@ upgrade
 
 ./git.sh
 ./database.sh
-./php.sh
+# fix brew installation alpha quality!
+# ./brew.sh
+# ./php-brew.sh
+#./php.sh
 #./python.sh
 ./image_tools.sh
 ./application.sh
