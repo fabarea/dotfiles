@@ -6,7 +6,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Image Tools\n\n"
+print_in_purple "\n   HTTP Server\n\n"
 
 #brew tap denji/nginx;
 #brew install nginx-full --with-lua-module --with-set-misc-module --with-http2 --with-gzip-static
