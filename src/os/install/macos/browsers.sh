@@ -12,7 +12,11 @@ print_in_purple "\n   Browsers\n"
 
 printf "\n"
 
-brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
+
+if [[ !  -d "/Applications/Google Chrome.app" ]];
+then
+    brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
+fi
 #brew_install "Chrome Canary" "google-chrome-canary" "caskroom/versions" "cask"
 #brew_install "Chromium" "chromium" "caskroom/cask" "cask"
 
@@ -20,7 +24,11 @@ brew_install "Chrome" "google-chrome" "caskroom/cask" "cask"
 
 printf "\n"
 
-brew_install "Firefox" "firefox" "caskroom/cask" "cask"
+if [[ !  -d "/Applications/Firefox.app" ]];
+then
+    brew_install "Firefox" "firefox" "caskroom/cask" "cask"
+fi
+
 #brew_install "Firefox Developer" "firefoxdeveloperedition" "caskroom/versions" "cask"
 #brew_install "Firefox Nightly" "firefoxnightly" "caskroom/versions" "cask"
 
