@@ -22,7 +22,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./maps.sh
 #./photos.sh
 #./safari.sh
-./terminal.sh
+#./terminal.sh
 #./textedit.sh
 ./trackpad.sh
 #./transmission.sh
