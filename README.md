@@ -4,6 +4,13 @@ These are the base dotfiles that I start with when I set up a
 new environment. For more specific local needs I use the `.local`
 files described in the [`Local Settings`](#local-settings) section.
 
+A custom setup can be triggered again with the command
+This will install in your home the following directory `~/.dotfiles`.
+
+```
+~/.dotfiles/src/os/setup.sh
+```
+
 ## Setup
 
 To set up the `dotfiles` just run the appropriate snippet in the
@@ -14,8 +21,6 @@ terminal:
 | `macOS` | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
 
-
-This will install in your home the following directory `~/.dotfiles`. A custom setup can be triggered again with the command `~/.dotfiles/src/os/setup.sh`.
 
 The setup process will:
 

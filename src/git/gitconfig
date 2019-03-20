@@ -170,7 +170,7 @@
 
     abbrev = 12
     attributesfile = ~/.gitattributes
-    autocrlf = input
+    autocrlf = false
     editor = mcedit
     excludesfile = ~/.gitignore
 

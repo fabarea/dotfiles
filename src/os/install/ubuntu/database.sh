@@ -8,4 +8,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Database\n\n"
 
-install_package "MySQL" "mysql-server"
+#install_package "MySQL" "mysql-server"

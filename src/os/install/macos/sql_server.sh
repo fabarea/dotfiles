@@ -8,12 +8,12 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   SQL Server\n\n"
 
-brew_install "MySQL" "mysql"
+brew_install "MySQL" "mariadb"
 # see if we require that
 # Fix mysql root password
-# $(brew --prefix mysql)/bin/mysqladmin -u root password root
+# mysqladmin -u root password root
 
-# Fix SequelPro login
+# Fix SequelPro login for MySQL >= 8
 #echo ~/.my.conf
 #[mysqld] \
 #default-authentication-plugin=mysql_native_password
