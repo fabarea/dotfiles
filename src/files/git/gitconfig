@@ -233,13 +233,14 @@
 
 [mergetool]
 	keepBackup = true
-[branch "master"]
-	rebase = true
+#[branch "master"]
+#	#rebase = true
+#	mergeoptions = --ff-only
 [rebase]
 	stat = true
 
 [commit]
   gpgsign = true
 
-[pull]
-  rebase = true
+#[pull]
+#  rebase = true
