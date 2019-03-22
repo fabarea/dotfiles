@@ -9,27 +9,27 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
 
-        "shell/aliases/bash_aliases"
-        "shell/autocomplete/$(get_os)/bash_autocomplete"
-        "shell/bash_exports"
-        "shell/bash_functions"
-        "shell/bash_logout"
-        "shell/bash_options"
-        "shell/bash_profile"
-        "shell/bash_prompt"
-        "shell/bashrc"
-        "shell/curlrc"
-        "shell/inputrc"
+        "files/shell/aliases/bash_aliases"
+        "files/shell/autocomplete/$(get_os)/bash_autocomplete"
+        "files/shell/bash_exports"
+        "files/shell/bash_functions"
+        "files/shell/bash_logout"
+        "files/shell/bash_options"
+        "files/shell/bash_profile"
+        "files/shell/bash_prompt"
+        "files/shell/bashrc"
+        "files/shell/curlrc"
+        "files/shell/inputrc"
 
-        "git/gitattributes"
-        "git/gitconfig"
-        "git/gitignore"
-        "git/tigrc"
+        "files/git/gitattributes"
+        "files/git/gitconfig"
+        "files/git/gitignore"
+        "files/git/tigrc"
 
         "files/tmux/tmux.conf"
 
-        "vim/vim"
-        "vim/vimrc"
+        "files/vim/vim"
+        "files/vim/vimrc"
 
     )
 
