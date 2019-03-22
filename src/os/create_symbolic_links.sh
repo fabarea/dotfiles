@@ -26,7 +26,7 @@ create_symlinks() {
         "git/gitignore"
         "git/tigrc"
 
-        "tmux/tmux.conf"
+        "files/tmux/tmux.conf"
 
         "vim/vim"
         "vim/vimrc"
