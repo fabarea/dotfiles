@@ -17,6 +17,12 @@ brew_install "PHP latest stable" "php"
 # Change in php.ini
 #zend_extension="/usr/local/Cellar/php@7.1/7.1.16/pecl/20160303/xdebug.so"
 #xdebug.max_nesting_level=512
+print_in_purple "\n   PHP extensions\n\n"
+
+# `php -m` to see loaded module
+execute \
+    "pecl instal xdebug" \
+    "Install PHP Xdebug"
 
 # Execute:
 # `ls -l /usr/local/etc/php/` to see available PHP versions
