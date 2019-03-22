@@ -8,7 +8,11 @@ A custom setup can be triggered again with the command
 This will install in your home the following directory `~/.dotfiles`.
 
 ```
+# Install everything
 ~/.dotfiles/src/os/setup.sh
+
+# Upgrade and clean up the installation
+~/.dotfiles/src/os/upgrade.sh
 ```
 
 ## Setup
