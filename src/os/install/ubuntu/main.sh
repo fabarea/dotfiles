@@ -7,23 +7,23 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-upgrade
-
+#upgrade
 
 ./build-essentials.sh
-./../nvm.sh
+#./../nvm.sh
 
-./git.sh
+./tools.sh
 ./database.sh
-# fix brew installation alpha quality!
 # ./brew.sh
 # ./php-brew.sh
 #./php.sh
 #./python.sh
-./image_tools.sh
-./application.sh
 ./misc.sh
-./../npm.sh
-./tmux.sh
+#./../npm.sh
 # ./../vim.sh
+
+if [[ $DISPLAY ]]; then
+    ./application.sh
+fi
+
 ./cleanup.sh

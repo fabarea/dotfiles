@@ -8,8 +8,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Applications\n\n"
 
-if [[ $DISPLAY ]]; then
-  install_package "Transmission" "transmission"
-  install_package "VLC" "vlc"
-  install_package "snap" "vscode --classic"
-fi
+install_package "Transmission" "transmission"
+install_package "VLC" "vlc"
+snap_install "VSCode" "code" "--classic"

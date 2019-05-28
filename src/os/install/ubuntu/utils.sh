@@ -45,7 +45,6 @@ install_package() {
     else
         print_success "$PACKAGE_READABLE_NAME"
     fi
-
 }
 
 brew_install() {
@@ -58,11 +57,29 @@ brew_install() {
     else
         print_success "$PACKAGE_READABLE_NAME"
     fi
-
 }
 
 package_is_installed() {
     dpkg -s "$1" &> /dev/null
+}
+
+snap_install() {
+
+    declare -r EXTRA_ARGUMENTS="$3"
+    declare -r PACKAGE="$2"
+    declare -r PACKAGE_READABLE_NAME="$1"
+
+    if ! snap_is_installed "$PACKAGE"; then
+        execute "sudo snap install $EXTRA_ARGUMENTS $PACKAGE" "$PACKAGE_READABLE_NAME"
+        #                                      suppress output ─┘│
+        #            assume "yes" as the answer to all prompts ──┘
+    else
+        print_success "$PACKAGE_READABLE_NAME"
+    fi
+}
+
+snap_is_installed() {
+    snap list | grep "$1" &> /dev/null
 }
 
 update() {
