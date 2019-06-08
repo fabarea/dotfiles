@@ -13,14 +13,9 @@ update
 #./../nvm.sh
 
 ./tools.sh
-./database.sh
-# ./brew.sh
-# ./php-brew.sh
-#./php.sh
 #./python.sh
 ./misc.sh
 #./../npm.sh
-# ./../vim.sh
 
 if [[ $DISPLAY ]]; then
     ./application.sh

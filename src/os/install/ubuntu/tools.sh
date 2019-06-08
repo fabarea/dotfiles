@@ -11,11 +11,16 @@ print_in_purple "\n   Development Tools\n\n"
 install_package "Git" "git"
 install_package "Tig" "tig"
 install_package "ack" "ack"
-#install_package "tmux" "tmux"
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print_in_purple "\n   Image Tools\n\n"
 
 install_package "ImageMagick" "imagemagick"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+print_in_purple "\n   Production Tools\n\n"
+
+install_package "GNOME Shell integration" "chrome-gnome-shell"
+install_package "tmux" "tmux"
