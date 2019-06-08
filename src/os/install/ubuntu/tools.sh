@@ -24,3 +24,11 @@ print_in_purple "\n   Production Tools\n\n"
 
 install_package "GNOME Shell integration" "chrome-gnome-shell"
 install_package "tmux" "tmux"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+print_in_purple "\n   Ansible\n\n"
+
+add_ppa "ansible/ansible"
+install_package "software-properties-common" "software-properties-common"
+install_package "Ansible" "ansible"

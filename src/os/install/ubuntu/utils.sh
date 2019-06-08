@@ -14,7 +14,12 @@ add_key() {
 }
 
 add_ppa() {
-    sudo add-apt-repository -y ppa:"$1" &> /dev/null
+
+    if ! grep -q "^deb .*$1" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+        # commands to add the ppa ...
+        sudo add-apt-repository -y ppa:"$1" &> /dev/null
+        update
+    fi
 }
 
 add_to_source_list() {
