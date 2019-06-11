@@ -69,8 +69,15 @@ terminal:
 The `dotfiles` can be easily extended to suit additional local
 requirements by using the following files:
 
-* `~/.bash.local`
 * `~/.gitconfig.local`
+* `~/.bash.local`
+
+As example
+```
+#!/bin/bash
+
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+```
 
 ## Update
 
