@@ -23,7 +23,12 @@ terminal:
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
 
 
-## Manuel steps
+## Manual steps
+
+
+* Install oh-my-fish
+
+  @see manual installation for now https://github.com/oh-my-fish/oh-my-fish
 
 * todo: atom with followin package
 
