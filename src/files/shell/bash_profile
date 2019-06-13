@@ -54,3 +54,6 @@ unset -f source_bash_files
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# In the future we want to have the .linuxbrew within $HOME
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
