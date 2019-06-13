@@ -8,6 +8,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Applications\n\n"
 
-install_package "Transmission" "transmission"
-install_package "VLC" "vlc"
-snap_install "VSCode" "code" "--classic"
+install_package "VPN IPSec / L2TP"  "network-manager-l2tp"
+install_package "VPN IPSec / L2TP Gnome Preference"  "network-manager-l2tp-gnome"
+install_package "Transmission"  "transmission"
+install_package "VLC"           "vlc"
+snap_install    "VSCode"        "code"          "--classic"
+snap_install    "Sublime Text"  "sublime-text"  "--classic"
+snap_install    "PHPStorm"      "phpstorm"      "--classic"
