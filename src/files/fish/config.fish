@@ -9,5 +9,5 @@ alias jj='zz';
 alias dep='php ./vendor/bin/dep'
 export GANDI_LIVEDNS_KEY="mrGbV8YSZiHCFOEzMKanPAdg"
 
-set -gx PATH $HOME/.cargo/bin $HOME/.composer/vendor/bin $PATH
-status --is-interactive; and source (pyenv init -|psub)
+#set -gx PATH $HOME/.cargo/bin $HOME/.composer/vendor/bin $PATH
+#status --is-interactive; and source (pyenv init -|psub)

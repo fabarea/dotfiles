@@ -11,6 +11,8 @@ print_in_purple "\n   Development Tools\n\n"
 install_package "Git" "git"
 install_package "Tig" "tig"
 install_package "ack" "ack"
+# @see manual installation for now https://github.com/oh-my-fish/oh-my-fish
+install_package "fonts-powerline" "fonts-powerline"
 install_package "fish" "fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

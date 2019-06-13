@@ -30,7 +30,6 @@ create_symlinks() {
 
         "files/vim/vim"
         "files/vim/vimrc"
-
     )
 
     local i=""
@@ -88,6 +87,12 @@ create_symlinks() {
 main() {
     print_in_purple "\n • Create symbolic links\n\n"
     create_symlinks "$@"
+
+    print_in_purple "\n • Create special symbolic for fish \n\n"
+
+    sourceFile="$(cd .. && pwd)/files/fish"
+    targetFile="$HOME/.config"
+    ln -sf $sourceFile $targetFile
 }
 
 main "$@"
