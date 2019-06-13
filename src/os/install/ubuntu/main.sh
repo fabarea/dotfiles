@@ -12,6 +12,7 @@ update
 ./build-essentials.sh
 #./../nvm.sh
 
+./brew.sh
 ./tools.sh
 #./python.sh
 ./misc.sh

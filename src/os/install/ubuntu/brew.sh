@@ -8,5 +8,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Brew packages \n\n"
 
-
-#brew tap drud/ddev && brew install ddev
+brew_tap "drud/ddev"
+brew_install "ddev" "ddev"
