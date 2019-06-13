@@ -16,6 +16,7 @@ alias map="xargs -n1"
 alias path='printf "%b\n" "${PATH//:/\\n}"'
 alias rm="rm -rf --"
 alias publish="node ~/Projects/NodeJs/note-publisher/index.js"
+alias j="z" # auto-jump
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

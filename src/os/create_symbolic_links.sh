@@ -20,6 +20,7 @@ create_symlinks() {
         "files/shell/bashrc"
         "files/shell/curlrc"
         "files/shell/inputrc"
+        "files/shell/z.sh"
 
         "files/git/gitattributes"
         "files/git/gitconfig"

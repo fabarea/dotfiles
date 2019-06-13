@@ -13,6 +13,7 @@ source_bash_files() {
         "bash_functions"
         "bash_options"
         "bash_prompt"
+        "z.sh"
         "bash.local"  # For local settings that should
                       # not be under version control.
     )
