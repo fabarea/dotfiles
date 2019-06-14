@@ -76,12 +76,11 @@ main() {
 
     if [ ! -d "$NVM_DIRECTORY" ]; then
         install_nvm
-    else
-        update_nvm
+    #else
+    #    update_nvm # we should move to the upgrade.sh script
     fi
 
     install_latest_stable_node
-
 }
 
 main

@@ -1,3 +1,8 @@
+# Following fisher scripts were installed in this setup
+# fisher add edc/bass
+# fisher add FabioAntunes/fish-nvm
+# fisher add jethrokuan/z
+
 alias l="ls -lh";
 alias ll="ls -alh";
 alias ..="cd ../";
