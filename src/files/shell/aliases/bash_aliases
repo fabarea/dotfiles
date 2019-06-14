@@ -8,7 +8,6 @@ alias cd..="cd .."
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 alias ch="history -c && > ~/.bash_history"
-alias e="vim --"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ll="ls -al"
 alias l="ls -lh"
@@ -17,6 +16,7 @@ alias path='printf "%b\n" "${PATH//:/\\n}"'
 alias rm="rm -rf --"
 alias publish="node ~/Projects/NodeJs/note-publisher/index.js"
 alias j="z" # auto-jump
+alias dc="docker-compose"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
