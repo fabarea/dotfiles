@@ -17,6 +17,7 @@ alias rm="rm -rf --"
 alias publish="node ~/Projects/NodeJs/note-publisher/index.js"
 alias j="z" # auto-jump
 alias dc="docker-compose"
+alias d="ddev"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
