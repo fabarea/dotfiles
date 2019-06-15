@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# FILE IS NOT USED!
+# @todo see if we should use phpenv or simply remove this file
+
 cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . "../../utils.sh" \
     && . "./utils.sh"
@@ -9,7 +12,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Build Essentials\n\n"
 
 # Install tools for compiling/building software from source.
-install_package "Build Essential" "build-essential"
 #install_package "Libxml2" "libxml2"
 #install_package "Libxml2-dev" "libxml2-dev"
 #install_package "libcurl4-openssl-dev" "libcurl4-openssl-dev"
@@ -24,7 +26,6 @@ install_package "Build Essential" "build-essential"
 #install_package "bison" "bison"
 
 # GnuPG archive keys of the Debian archive.
-install_package "GnuPG archive keys" "debian-archive-keyring"
 
 # Software which is not included by default
 # in Ubuntu due to legal or copyright reasons.

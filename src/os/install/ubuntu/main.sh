@@ -7,19 +7,11 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-#upgrade
+upgrade
 
-./build-essentials.sh
 ./../nvm.sh
-
-./brew.sh
-./tools.sh
+./../common_packages.sh
+./ubuntu_packages.sh
 #./python.sh
-./misc.sh
-#./../npm.sh
-
-if [[ $DISPLAY ]]; then
-    ./application.sh
-fi
 
 ./cleanup.sh

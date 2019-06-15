@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
 brew_cleanup() {
 
     # By default Homebrew does not uninstall older versions

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# FILE IS NOT USED!
+# @todo see if we should use phpenv or simply remove this file
 cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . "../../utils.sh" \
     && . "./utils.sh"

@@ -10,7 +10,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./homebrew.sh
 ./bash.sh
 
-#./../nvm.sh
+./../nvm.sh
+./../common_packages.sh
 ./browsers.sh
 #./compression_tools.sh
 ./git.sh
@@ -19,10 +20,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./http_server.sh
 ./misc.sh
 ./misc_tools.sh
-#./../npm.sh
 ./php.sh
 ./sql_server.sh
 #./tmux.sh
 ./video_tools.sh
-#./../vim.sh
 #./web_font_tools.sh
