@@ -25,27 +25,8 @@ terminal:
 
 ## Manual steps
 
-
-* Install oh-my-fish
-
-  @see manual installation for now https://github.com/oh-my-fish/oh-my-fish
-
-* todo: atom with followin package
-
-```
-    apm formatter
-    apm expand-region
-```
-
-* todo: add fish configuration
-* import ssh keys
-
-```
-    cd my/ssh
-    mv ssh ~/.ssh
-    chmod 600 ~/.ssh/*
-```
-
+* Import ssh keys
+* Import gpg keys
 * adjust .gitconfig.local by adding
 
 ```
@@ -57,14 +38,6 @@ terminal:
 
 [commit]
 	gpgsign = true
-```
-
-* Import gpg keys
-
-```
-    cd my/keys
-    gpg --import my-secret-keyring.gpg
-    gpg --import-options import-local-sigs my-public-keyring.gpg
 ```
 
 ## Customize
@@ -89,12 +62,6 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 To update the dotfiles you can either run the [`setup`
 script](src/os/setup.sh) or, if you want to just update one particular
 part, run the appropriate [`os` script](src/os).
-
-### Forks
-
-If you decide to fork this project, don't forget to substitute my
-username with your own in the [`setup` snippets](#setup) and [in the
-`setup` script](https://github.com/fabarea/dotfiles/blob/1503cf23ef23f6e31342b140bcd246625160b94f/src/os/setup.sh#L3).
 
 ## Acknowledgements
 
