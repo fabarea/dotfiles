@@ -61,8 +61,11 @@ if [[ $DISPLAY ]]; then
     install_package "VPN IPSec / L2TP"          "network-manager-l2tp"
     install_package "VPN Gnome Preference"      "network-manager-l2tp-gnome"
     install_package "GNOME Shell integration"   "chrome-gnome-shell"
+    install_package "GNOME Tweak"               "gnome-tweak-tool"
     install_package "Transmission"              "transmission"
     install_package "VLC"                       "vlc"
+    install_package "Folder Color (Nautilus)"   "folder-color"
+    install_package "LibreOffice preview"       "unoconv"
 
     snap_install    "VSCode"        "code"          "--classic"
     snap_install    "Atom"          "atom"          "--classic"
