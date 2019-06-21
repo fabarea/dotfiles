@@ -66,6 +66,8 @@ if [[ $DISPLAY ]]; then
     install_package "VLC"                       "vlc"
     install_package "Folder Color (Nautilus)"   "folder-color"
     install_package "LibreOffice preview"       "unoconv"
+    install_package "Shutter (screenshot)"      "shutter"
+    install_package "FlameShot (screenshot)"      "flameshot"
 
     snap_install    "VSCode"        "code"          "--classic"
     snap_install    "Atom"          "atom"          "--classic"
@@ -75,5 +77,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "Mattermost"    "mattermost-desktop"
     snap_install    "Chromium"      "chromium"
     snap_install    "Bitwarden"     "bitwarden"
+    snap_install    "Signal"        "signal-desktop"
+    snap_install    "Simple Server" "serve"
 
 fi
