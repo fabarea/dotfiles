@@ -231,7 +231,7 @@
 
 [branch "master"]
 	rebase = true
-#	mergeoptions = --ff-only
+	#mergeoptions = --ff-only
 
 [rebase]
 	stat = true
