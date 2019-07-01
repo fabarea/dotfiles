@@ -8,7 +8,8 @@ alias ll="ls -alh";
 alias ..="cd ../";
 alias ...="cd ../..";
 alias ....="cd ../../..";
-alias cdp="cd ~/Projects";
+alias cds="cd ~/Sites";
+alias c='xclip -selection clipboard'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -18,5 +19,5 @@ alias d='ddev';
 alias dc='docker-compose';
 alias dep='php ./vendor/bin/dep'
 
-#set -gx PATH $HOME/.cargo/bin $HOME/.composer/vendor/bin $PATH
+set -gx PATH $HOME/.cargo/bin $HOME/.config/composer/vendor/bin $PATH
 #status --is-interactive; and source (pyenv init -|psub)

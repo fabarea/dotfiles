@@ -43,3 +43,7 @@ set menu-complete-display-prefix on
 # Display a list of the matching files
 
 set show-all-if-ambiguous on
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
