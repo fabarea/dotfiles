@@ -1,0 +1,22 @@
+<templateSet group="FluidInline">
+  <template name="if:if" value="{f:if(condition:'{$condition$}', then:'', else:'')}" description="Fluid if viewhelper" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="if:translate" value="{f:translate(key:'$key$')}" description="Generated Fluid translate tag." toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="if:alldebug" value="{_all -&gt; f:debug()}" description="Debug all variables available in fluid template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-upgrade
+#upgrade
 
 ./../nvm.sh
 ./../common_packages.sh

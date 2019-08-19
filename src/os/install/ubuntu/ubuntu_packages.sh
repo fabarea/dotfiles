@@ -37,7 +37,7 @@ install_package "Ansible"                       "ansible"
 print_in_purple "\n   Docker\n\n"
 
 # @see https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
-install_package "Docker" "docker-ce"
+#install_package "Docker" "docker-ce"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -55,7 +55,8 @@ if [[ $DISPLAY ]]; then
     install_package "Folder Color (Nautilus)"   "folder-color"
     install_package "LibreOffice preview"       "unoconv"
     install_package "Shutter (screenshot)"      "shutter"
-    install_package "FlameShot (screenshot)"    "flameshot"
+    install_package "Virtualbox"                "virtualbox"
+    #install_package "Microsoft TrueType fonts"  "msttcorefonts"
 
     snap_install    "VSCode"            "code"          "--classic"
     snap_install    "Atom"              "atom"          "--classic"
@@ -68,6 +69,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "Signal"            "signal-desktop"
     snap_install    "Simple Server"     "serve"
     snap_install    "Epiphany"          "epiphany"
+    snap_install    "Inkscape"          "inkscape"
 fi
 
 # todo

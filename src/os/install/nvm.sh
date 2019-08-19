@@ -80,7 +80,8 @@ main() {
     #    update_nvm # we should move to the upgrade.sh script
     fi
 
-    install_latest_stable_node
+    # todo move to the upgrade script
+    #install_latest_stable_node
 }
 
 main

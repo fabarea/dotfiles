@@ -73,3 +73,39 @@ Inspiration and code was taken from many sources, including:
 ## License
 
 The code is available under the [MIT license](LICENSE.txt).
+
+## TODO #1
+
+Script the following action:
+
+```
+# VS Code settings and key-bindings
+
+rm $HOME/.config/Code/User/keybindings.json
+ln -s $HOME/.dotfiles/files/vs-code/ubuntu/keybindings.json  $HOME/.config/Code/User/
+rm $HOME/.config/Code/User/settings.json
+ln -s $HOME/.dotfiles/files/vs-code/ubuntu/settings.json  $HOME/.config/Code/User/
+
+
+# Sublime 3
+
+rm "$HOME/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+ln -s "$HOME/.dotfiles/files/sublime-text-3/ubuntu/Default (Linux).sublime-keymap"  $HOME/.config/sublime-text-3/Packages/User
+
+# Atom ... todo
+
+
+# PHPStorm
+
+rm -rf $HOME/.PhpStorm2019.1/config/templates
+ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
+
+```
+
+## TODO #2
+
+Rework upgrade script
+
+```
+~/.dotfiles/src/os/upgrade.sh
+```
