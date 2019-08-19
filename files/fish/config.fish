@@ -10,6 +10,7 @@ alias ...="cd ../..";
 alias ....="cd ../../..";
 alias cds="cd ~/Sites";
 alias c='xclip -selection clipboard'
+alias ld='lazydocker'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -16,6 +16,7 @@ brew_install "mkcert (certificat)"  "mkcert"
 brew_install "nss"                  "nss"
 brew_install "PHP 7.1"              "php@7.1"
 brew_install "PHP 7.2"              "php@7.2"
+brew_install "LazyDocker"           "lazydocker"
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -27,4 +28,5 @@ install_npm_package "npm (self update)"     "npm"
 install_npm_package "gatsby-cli"            "gatsby-cli"
 install_npm_package "eleventy"              "eleventy"
 install_npm_package "netlify-cli"           "netlify-cli"
+install_npm_package "cleaver"               "cleaver"
 #install_npm_package "parcel-bundler"       "parcel-bundler"
