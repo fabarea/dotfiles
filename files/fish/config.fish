@@ -18,6 +18,7 @@ alias j='z';
 alias jj='zz';
 alias d='ddev';
 alias dc='docker-compose';
+alias edit='subl'
 alias dep='php ./vendor/bin/dep'
 
 set -gx PATH $HOME/.cargo/bin $HOME/.config/composer/vendor/bin $PATH
