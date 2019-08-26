@@ -18,9 +18,10 @@ create_symlinks() {
         "files/shell/bash_profile"
         "files/shell/bash_prompt"
         "files/shell/bashrc"
-        "files/shell/curlrc"
-        "files/shell/inputrc"
-        "files/shell/z.sh"
+        "files/curlrc"
+        "files/inputrc"
+        "files/npmrc"
+        "files/z.sh"
 
         "files/git/gitattributes"
         "files/git/gitconfig"
