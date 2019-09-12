@@ -25,9 +25,20 @@ print_in_purple "\n   npm\n\n"
 
 install_npm_package "npm (self update)"     "npm"
 #install_npm_package "!nstant-markdown-d"   "instant-markdown-d"
-install_npm_package "gatsby-cli"            "gatsby-cli"
-install_npm_package "eleventy"              "eleventy"
-install_npm_package "netlify-cli"           "netlify-cli"
-install_npm_package "cleaver"               "cleaver"
-install_npm_package "gulp"                  "gulp"
+install_npm_package "Gatsby CLI"            "gatsby-cli"
+install_npm_package "Eleventy"              "eleventy"
+install_npm_package "Netlify CLI"           "netlify-cli"
+install_npm_package "Cleaver"               "cleaver"
+install_npm_package "Gulp"                  "gulp"
+install_npm_package "Prettier"              "prettier"
+install_npm_package "ESLint"                "eslint"
+install_npm_package "Vue CLI"               "@vue/cli"
 #install_npm_package "parcel-bundler"       "parcel-bundler"
+
+# Todo install VS Code plugin like this
+# code --install-extension dbaeumer.vscode-eslint
+# code --install-extension esbenp.prettier-vscode
+# code --install-extension hollowtree.vue-snippets
+# code --install-extension octref.vetur
+# code --install-extension skyapps.fish-vscode
+# code --install-extension vscode-icons-team.vscode-icons
