@@ -10,8 +10,8 @@ update
 #upgrade
 
 ./../nvm.sh
-./../common_packages.sh
-./ubuntu_packages.sh
+./../common.sh
+./ubuntu.sh
 #./python.sh
 
 ./cleanup.sh
