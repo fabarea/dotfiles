@@ -1,7 +1,13 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 1.2,
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.iconTheme": "vscode-icons",
     "explorer.confirmDelete": false,
-    "files.autoSave": "afterDelay"
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "editor.formatOnSave": true,
+    "prettier.disableLanguages": [],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
