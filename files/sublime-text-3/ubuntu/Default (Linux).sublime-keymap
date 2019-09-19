@@ -1,4 +1,12 @@
 [
 	
-	{ "keys": ["ctrl+s"], "command": "save_all" }
+	{ "keys": ["ctrl+s"], "command": "save_all" },
+	{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down" },
+
+	{ "keys": ["alt+d"], "command": "find_under_expand" },
+
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
 ]
