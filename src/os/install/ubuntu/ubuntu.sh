@@ -62,6 +62,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "Atom"              "atom"                  "--classic"
     snap_install    "Sublime Text"      "sublime-text"          "--classic"
     snap_install    "PHPStorm"          "phpstorm"              "--classic"
+    snap_install    "WebStorm"          "webstorm"              "--classic"
     snap_install    "PyCharm CE"        "pycharm-professionnel" "--classic"
     snap_install    "DataGrip"          "datagrip"              "--classic"
     snap_install    "Mattermost"        "mattermost-desktop"
