@@ -16,7 +16,7 @@ alias ld='lazydocker'
 
 alias j='z';
 alias jj='zz';
-alias d='ddev';
+alias dd='ddev';
 alias dc='docker-compose';
 alias edit='subl'
 alias dep='php ./vendor/bin/dep'
