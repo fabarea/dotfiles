@@ -34,6 +34,7 @@ install_npm_package "Gulp"                  "gulp"
 install_npm_package "Prettier"              "prettier"
 install_npm_package "ESLint"                "eslint"
 install_npm_package "Vue CLI"               "@vue/cli"
+install_npm_package "degit"                 "degit"
 #install_npm_package "parcel-bundler"       "parcel-bundler"
 
 # Todo install VS Code plugin like this
