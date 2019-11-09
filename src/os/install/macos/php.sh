@@ -8,8 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   PHP\n\n"
 
-brew_install "PHP 7.1" "php@7.1"
-brew_install "PHP 7.2" "php@7.2"
+brew_install "PHP 7.3" "php@7.3"
 brew_install "PHP latest stable" "php"
 
 # pecl install xdebug

@@ -12,29 +12,23 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 ./../nvm.sh
 ./../common.sh
-./browsers.sh
+./casks.sh
 #./compression_tools.sh
 ./image_tools.sh
-./http_server.sh
 ./misc.sh
-./misc_tools.sh
 ./php.sh
-./sql_server.sh
-#./tmux.sh
-./video_tools.sh
-#./web_font_tools.sh
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   Git\n\n"
+print_in_purple "\n   Brew packages\n\n"
 
 brew_install "Git"                  "git"
 brew_install "Tig"                  "tig"
 brew_install "Midnight Commander"   "mc"
+brew_install "GPG"                  "gpg"
+brew_install "ShellCheck"           "shellcheck"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n   GPG\n\n"
-
-brew_install "GPG" "gpg"
+print_in_purple "\n   Cleanup\n\n"
+brew_cleanup
