@@ -39,3 +39,6 @@ then
     printf "\n"
     brew_install "Bitwarde" "bitwarden" "caskroom/cask" "cask"
 fi
+
+brew_install "Visual Studio Code"   "visual-studio-code"    "caskroom/cask" "cask"
+brew_install "Authy"                "authy"                 "caskroom/cask" "cask"
