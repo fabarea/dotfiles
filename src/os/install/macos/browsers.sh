@@ -24,3 +24,12 @@ then
     printf "\n"
     brew_install "Firefox" "firefox" "caskroom/cask" "cask"
 fi
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+if [[ !  -d "/Applications/Brave Browser.app" ]];
+then
+    printf "\n"
+    brew_install "Brave" "brave-browser" "caskroom/cask" "cask"
+fi
