@@ -25,21 +25,24 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Survival kit!\n\n"
 
-install_package "Build Essential"       "build-essential"
-install_package "GnuPG archive keys"    "debian-archive-keyring"
-install_package "Git"                   "git"
-install_package "Tig"                   "tig"
-install_package "ack"                   "ack"
-install_package "fonts-powerline"       "fonts-powerline" # used for fish
-install_package "fish"                  "fish"
-install_package "Linuxbrew"             "linuxbrew-wrapper"
-install_package "cURL"                  "curl"
-install_package "Midnight Commander"    "mc"
-install_package "AG - better than Ack"  "silversearcher-ag"
-install_package "ShellCheck"            "shellcheck"
-install_package "xclip (CLI Clipboard)" "xclip"
-install_package "tmux"                  "tmux"
-install_package "ImageMagick"           "imagemagick"
+install_package "Build Essential"           "build-essential"
+install_package "GnuPG archive keys"        "debian-archive-keyring"
+install_package "Git"                       "git"
+install_package "Tig"                       "tig"
+install_package "ack"                       "ack"
+install_package "fonts-powerline"           "fonts-powerline" # used for fish
+install_package "fish"                      "fish"
+install_package "Linuxbrew"                 "linuxbrew-wrapper"
+install_package "cURL"                      "curl"
+install_package "Midnight Commander"        "mc"
+install_package "AG - better than Ack"      "silversearcher-ag"
+install_package "ShellCheck"                "shellcheck"
+install_package "xclip (CLI Clipboard)"     "xclip"
+install_package "tmux"                      "tmux"
+install_package "ImageMagick"               "imagemagick"
+install_package "Flatpak"                   "flatpak"
+install_package "gThumb"                    "gthumb"
+install_package "Nautilus Image Converter"  "nautilus-image-converter"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -89,7 +92,13 @@ if [[ $DISPLAY ]]; then
     snap_install    "Simple Server"     "serve"
     snap_install    "Epiphany"          "epiphany"
     snap_install    "Inkscape"          "inkscape"
+    snap_install    "Telegram"          "telegram-desktop"
 fi
+
+# TODO: decide whether to install these packages
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak install flathub org.onlyoffice.desktopeditors
+# flatpak install flathub com.getpostman.Postman
 
 # todo
 #composer global require "squizlabs/php_codesniffer=*"
