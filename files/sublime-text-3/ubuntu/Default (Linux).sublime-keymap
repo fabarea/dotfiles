@@ -6,7 +6,7 @@
 	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
 	{ "keys": ["ctrl+down"], "command": "swap_line_down" },
 
-	{ "keys": ["alt+d"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+g"], "command": "find_under_expand" },
 
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
 ]
