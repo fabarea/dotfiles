@@ -11,7 +11,6 @@ update
 
 ./../nvm.sh
 ./../common.sh
-#./python.sh
 
 ./cleanup.sh
 
@@ -32,7 +31,7 @@ install_package "Tig"                       "tig"
 install_package "ack"                       "ack"
 install_package "fonts-powerline"           "fonts-powerline" # used for fish
 install_package "fish"                      "fish"
-install_package "Linuxbrew"                 "linuxbrew-wrapper"
+# install_package "Linuxbrew"                 "linuxbrew-wrapper" -- configure to be installed in $HOME
 install_package "cURL"                      "curl"
 install_package "Midnight Commander"        "mc"
 install_package "AG - better than Ack"      "silversearcher-ag"

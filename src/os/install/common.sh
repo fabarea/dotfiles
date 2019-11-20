@@ -14,10 +14,7 @@ brew_install "ddev"                 "ddev"
 brew_install "docker-compose"       "docker-compose"
 brew_install "mkcert (certificat)"  "mkcert"
 brew_install "nss"                  "nss"
-brew_install "PHP 7.1"              "php@7.1"
-brew_install "PHP 7.2"              "php@7.2"
 brew_install "LazyDocker"           "lazydocker"
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
