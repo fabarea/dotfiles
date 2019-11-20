@@ -55,7 +55,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+f1",
+        "key": "ctrl+f1",
         "command": "workbench.files.action.showActiveFileInExplorer"
     },
     {
