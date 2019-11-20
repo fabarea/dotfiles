@@ -92,6 +92,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "Epiphany"          "epiphany"
     snap_install    "Inkscape"          "inkscape"
     snap_install    "Telegram"          "telegram-desktop"
+    snap_install    "Typora"            "typora-alanzanattadev"
 fi
 
 # TODO: decide whether to install these packages
