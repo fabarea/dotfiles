@@ -75,14 +75,18 @@ if [[ $DISPLAY ]]; then
     install_package "LibreOffice preview"       "unoconv"
     install_package "Shutter (screenshot)"      "shutter"
     install_package "Virtualbox"                "virtualbox"
-    #install_package "Microsoft TrueType fonts"  "msttcorefonts"
+    install_package "PHP CLI"                   "php-cli"
+    install_package "Composer (PHP)"            "composer"
+    install_package "pip (python3)"             "python3-pip"
+    #install_package "mkdocs"                    "mkdocs" # @todo package is old and should be installed via pip
 
+    # Snap instllation
     snap_install    "VSCode"            "code"                  "--classic"
     snap_install    "Atom"              "atom"                  "--classic"
     snap_install    "Sublime Text"      "sublime-text"          "--classic"
     snap_install    "PHPStorm"          "phpstorm"              "--classic"
     snap_install    "WebStorm"          "webstorm"              "--classic"
-    snap_install    "PyCharm CE"        "pycharm-professionnel" "--classic"
+    snap_install    "PyCharm"           "pycharm-professionnel" "--classic"
     snap_install    "DataGrip"          "datagrip"              "--classic"
     snap_install    "Mattermost"        "mattermost-desktop"
     snap_install    "Chromium"          "chromium"
@@ -92,13 +96,20 @@ if [[ $DISPLAY ]]; then
     snap_install    "Epiphany"          "epiphany"
     snap_install    "Inkscape"          "inkscape"
     snap_install    "Telegram"          "telegram-desktop"
-    snap_install    "Typora"            "typora-alanzanattadev"
 fi
 
 # TODO: decide whether to install these packages
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # flatpak install flathub org.onlyoffice.desktopeditors
 # flatpak install flathub com.getpostman.Postman
+
+# todo install typora
+# As stated: https://www.typora.io/#linux
+# wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+# sudo add-apt-repository 'deb https://typora.io/linux ./'
+# sudo apt-get update
+# sudo apt-get install typora
+
 
 # todo
 #composer global require "squizlabs/php_codesniffer=*"

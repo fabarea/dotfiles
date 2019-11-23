@@ -17,17 +17,16 @@ files described in the [`Local Settings`](#local-settings) section.
 To set up the `dotfiles` just run the appropriate snippet in the
 terminal:
 
-| OS | Snippet |
-|:---|:---|
-| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
+| OS       | Snippet                                                                                  |
+| :------- | :--------------------------------------------------------------------------------------- |
+| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"`  |
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
-
 
 ## Manual steps
 
-* Import ssh keys
-* Import gpg keys
-* adjust .gitconfig.local by adding
+-   Import ssh keys
+-   Import gpg keys
+-   adjust .gitconfig.local by adding
 
 ```
 [user]
@@ -47,10 +46,11 @@ terminal:
 The `dotfiles` can be easily extended to suit additional local
 requirements by using the following files:
 
-* `~/.gitconfig.local`
-* `~/.bash.local`
+-   `~/.gitconfig.local`
+-   `~/.bash.local`
 
 As example
+
 ```
 #!/bin/bash
 
@@ -67,8 +67,8 @@ part, run the appropriate [`os` script](src/os).
 
 Inspiration and code was taken from many sources, including:
 
-* [Mathias Bynens'](https://github.com/mathiasbynens)
-  [dotfiles](https://github.com/mathiasbynens/dotfiles)
+-   [Mathias Bynens'](https://github.com/mathiasbynens)
+    [dotfiles](https://github.com/mathiasbynens/dotfiles)
 
 ## License
 
