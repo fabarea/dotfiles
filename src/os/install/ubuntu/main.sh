@@ -42,6 +42,7 @@ install_package "ImageMagick"               "imagemagick"
 install_package "Flatpak"                   "flatpak"
 install_package "gThumb"                    "gthumb"
 install_package "Nautilus Image Converter"  "nautilus-image-converter"
+install_package "MariaDB client"            "mariadb-client"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -78,24 +79,28 @@ if [[ $DISPLAY ]]; then
     install_package "PHP CLI"                   "php-cli"
     install_package "Composer (PHP)"            "composer"
     install_package "pip (python3)"             "python3-pip"
-    #install_package "mkdocs"                    "mkdocs" # @todo package is old and should be installed via pip
 
     # Snap instllation
-    snap_install    "VSCode"            "code"                  "--classic"
-    snap_install    "Atom"              "atom"                  "--classic"
-    snap_install    "Sublime Text"      "sublime-text"          "--classic"
-    snap_install    "PHPStorm"          "phpstorm"              "--classic"
-    snap_install    "WebStorm"          "webstorm"              "--classic"
-    snap_install    "PyCharm"           "pycharm-professionnel" "--classic"
-    snap_install    "DataGrip"          "datagrip"              "--classic"
-    snap_install    "Mattermost"        "mattermost-desktop"
-    snap_install    "Chromium"          "chromium"
-    snap_install    "Bitwarden"         "bitwarden"
-    snap_install    "Signal"            "signal-desktop"
-    snap_install    "Simple Server"     "serve"
-    snap_install    "Epiphany"          "epiphany"
-    snap_install    "Inkscape"          "inkscape"
-    snap_install    "Telegram"          "telegram-desktop"
+    snap_install    "VSCode"                "code"                  "--classic"
+    snap_install    "Atom"                  "atom"                  "--classic"
+    snap_install    "Sublime Text"          "sublime-text"          "--classic"
+    snap_install    "PHPStorm"              "phpstorm"              "--classic"
+    snap_install    "WebStorm"              "webstorm"              "--classic"
+    snap_install    "PyCharm"               "pycharm-professionnel" "--classic"
+    snap_install    "DataGrip"              "datagrip"              "--classic"
+    snap_install    "Kubernetes Client"     "kubectl"               "--classic"
+    # snap_install    "Kubernetes Cluster"    "kubeadm"               "--classic"
+    # snap_install    "Microk8s"              "microk8s"              "--classic"
+    snap_install    "Helm"                  "helm"                  "--classic"
+    snap_install    "GCloud"                "google-cloud-sdk"      "--classic"
+    snap_install    "Mattermost"            "mattermost-desktop"
+    snap_install    "Chromium"              "chromium"
+    snap_install    "Bitwarden"             "bitwarden"
+    snap_install    "Signal"                "signal-desktop"
+    snap_install    "Simple Server"         "serve"
+    snap_install    "Epiphany"              "epiphany"
+    snap_install    "Inkscape"              "inkscape"
+    snap_install    "Telegram"              "telegram-desktop"
 fi
 
 # TODO: decide whether to install these packages
@@ -110,6 +115,9 @@ fi
 # sudo apt-get update
 # sudo apt-get install typora
 
+# pip packages to install
+# pip install mkdocs
+# pip install mkdocs-material
 
 # todo
 #composer global require "squizlabs/php_codesniffer=*"
