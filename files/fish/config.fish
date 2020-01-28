@@ -20,9 +20,9 @@ alias dd='ddev';
 alias dc='docker-compose';
 alias edit='subl'
 alias dep='php ./vendor/bin/dep'
-alias di='date --iso-8601=seconds'
-alias ts='date +"%s"'
-alias publish-notes='cd ~/pCloudDrive/Fabien/Notes/scripts; make; echo ""; echo "Wait a bit and open https://fab.omic.ch"'
+alias ddd='date --iso-8601=seconds'
+alias tt='date +"%s"'
+alias pp='make -C ~/pCloudDrive/Fabien/Notes/scripts'
 
 set -gx PATH $HOME/.cargo/bin $HOME/.local/bin $PATH
 #status --is-interactive; and source (pyenv init -|psub)
