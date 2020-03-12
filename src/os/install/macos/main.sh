@@ -19,6 +19,7 @@ brew_install "ack"                          "ack"
 brew_install "Tig"                          "tig"
 brew_install "Midnight Commander"           "mc"
 brew_install "GPG"                          "gpg"
+brew_install "htop"                         "htop"
 brew_install "ShellCheck"                   "shellcheck"
 brew_install "NVM - Node Version Manager"   "nvm"
 #brew_install "PHP 7.3"                     "php@7.3"
@@ -60,6 +61,7 @@ brew_install "GPG Suite"            "gpg-suite"             ""          "cask"
 brew_install "Dropbox"              "dropbox"               ""          "cask"
 brew_install "Discord"              "discord"               ""          "cask"
 brew_install "Skype"                "skype"                 ""          "cask"
+brew_install "Boinc"                "boinc"                 ""          "cask"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
