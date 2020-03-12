@@ -115,3 +115,9 @@ ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
 ```
 * oh-my-zsh is not yet installed on macOS
 * symlink .zshrc on macOS
+* symlink VS Code
+
+```
+ln -s ~/.dotfiles/files/vs-code/macos/keybindings.json ~/Library/Application\ Support/Code/User/
+ln -s ~/.dotfiles/files/vs-code/macos/settings.json ~/Library/Application\ Support/Code/User/
+```
