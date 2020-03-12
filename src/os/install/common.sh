@@ -20,6 +20,14 @@ brew_install "LazyDocker"           "lazydocker"
 
 print_in_purple "\n   npm common packages\n\n"
 
+# Note! if it fails on macOS, run `nvm install --lts` beforehand
+# This will not work below as nvm is a script / function
+# Just make sure we have the latest LTS node version
+#execute \
+#    "nvm install --lts" \
+#    "Install LTS node version"
+
+
 #install_npm_package "npm (self update)"     "npm"
 #install_npm_package "!nstant-markdown-d"   "instant-markdown-d"
 #install_npm_package "Gatsby CLI"            "gatsby-cli"

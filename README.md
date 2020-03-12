@@ -2,10 +2,13 @@
 
 ```
 # Install everything
-~/.dotfiles/src/os/setup.sh
+~/.dotfiles/install.sh
 
 # Upgrade and clean up the installation
-~/.dotfiles/src/os/upgrade.sh
+~/.dotfiles/upgrade.sh (todo!)
+
+# Set default preferences
+~/.dotfiles/preference.sh (todo!)
 ```
 
 These are the base dotfiles that I start with when I set up a
@@ -104,8 +107,11 @@ ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
 
 ## TODO #2
 
-Rework upgrade script
+* Rework upgrade script
 
 ```
 ~/.dotfiles/src/os/upgrade.sh
+~/.dotfiles/src/os/preference.sh (create it and make it independant)
 ```
+* oh-my-zsh is not yet installed on macOS
+* symlink .zshrc on macOS
