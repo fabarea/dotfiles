@@ -18,6 +18,9 @@ create_symlinks() {
         "files/bash/bash_profile"
         "files/bash/bash_prompt"
         "files/bash/bashrc"
+
+        "files/zsh/zshrc"
+
         "files/curlrc"
         "files/inputrc"
         "files/npmrc"
