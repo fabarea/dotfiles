@@ -72,10 +72,10 @@ execute "defaults write -g QLPanelAnimationDuration -float 0" \
 execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false" \
     "Disable resume system-wide"
 
-execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
-         sudo scutil --set ComputerName 'laptop' && \
-         sudo scutil --set HostName 'laptop' && \
-         sudo scutil --set LocalHostName 'laptop'" \
+execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'fabidule' && \
+         sudo scutil --set ComputerName 'fabidule' && \
+         sudo scutil --set HostName 'fabidule' && \
+         sudo scutil --set LocalHostName 'fabidule'" \
     "Set computer name"
 
 execute "sudo systemsetup -setrestartfreeze on" \

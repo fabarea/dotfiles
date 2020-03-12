@@ -33,7 +33,7 @@ create_symlinks() {
         "/usr/local/etc/php/5.6/conf.d"
         "/usr/local/etc/php/7.1/conf.d"
         "/usr/local/etc/php/7.3/conf.d"
-        "/usr/local/etc/php/7.3/conf.d"
+        "/usr/local/etc/php/7.4/conf.d"
     )
 
     local preferenceFile="user.ini"
