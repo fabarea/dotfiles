@@ -95,7 +95,7 @@ main() {
 
     print_in_purple "\n • Create special symbolic for fish \n\n"
 
-    sourceFile="$(cd ../.. && pwd)/files/fish"
+    sourceFile="$(cd ../.. && pwd)/files/$(get_os)/config"
     targetFile="$HOME/.config"
     ln -sf $sourceFile $targetFile
 }
