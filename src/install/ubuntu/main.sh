@@ -76,7 +76,13 @@ if [[ $DISPLAY ]]; then
     install_package "LibreOffice preview"       "unoconv"
     install_package "Shutter (screenshot)"      "shutter"
     install_package "Virtualbox"                "virtualbox"
+    install_package "SQLite"                    "sqlite3"
     install_package "PHP CLI"                   "php-cli"
+    install_package "PHP MySQL"                 "php-mysql"
+    install_package "PHP XML"                   "php-xml"
+    install_package "PHP ZIP"                   "php-zip"
+    install_package "PHP GD"                    "php-gd"
+    install_package "PHP SQLite"                "php-sqlite3"
     install_package "Composer (PHP)"            "composer"
     install_package "pip (python3)"             "python3-pip"
 
@@ -88,6 +94,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "WebStorm"              "webstorm"              "--classic"
     snap_install    "PyCharm"               "pycharm-professionnel" "--classic"
     snap_install    "DataGrip"              "datagrip"              "--classic"
+    snap_install    "Android Studio"        "android-studio"        "--classic"
     snap_install    "Kubernetes Client"     "kubectl"               "--classic"
     # snap_install    "Kubernetes Cluster"    "kubeadm"               "--classic"
     # snap_install    "Microk8s"              "microk8s"              "--classic"
@@ -118,6 +125,7 @@ fi
 # pip packages to install
 # pip install mkdocs
 # pip install mkdocs-material
+# pip install youtube-dl
 
 # todo
 #composer global require "squizlabs/php_codesniffer=*"
