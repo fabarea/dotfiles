@@ -27,20 +27,22 @@ print_in_purple "\n   npm common packages\n\n"
 #    "nvm install --lts" \
 #    "Install LTS node version"
 
+# TODO decide what to do. Either we can make them fast or we remove them and install them on demand
+# NPM packages are slow to install!! They are not detected if already installed
 
-#install_npm_package "npm (self update)"     "npm"
-#install_npm_package "!nstant-markdown-d"   "instant-markdown-d"
-#install_npm_package "Gatsby CLI"            "gatsby-cli"
-#install_npm_package "Eleventy"              "eleventy"
-install_npm_package "Netlify CLI"           "netlify-cli"
-#install_npm_package "Cleaver"               "cleaver"
-#install_npm_package "Marp"                  "@marp-team/marp-cli"
-install_npm_package "Gulp"                  "gulp"
-install_npm_package "Prettier"              "prettier"
-install_npm_package "ESLint"                "eslint"
-#install_npm_package "Vue CLI"               "@vue/cli"
-install_npm_package "degit"                 "degit"
-#install_npm_package "parcel-bundler"       "parcel-bundler"
+# #install_npm_package "npm (self update)"     "npm"
+# #install_npm_package "!nstant-markdown-d"   "instant-markdown-d"
+# #install_npm_package "Gatsby CLI"            "gatsby-cli"
+# #install_npm_package "Eleventy"              "eleventy"
+# install_npm_package "Netlify CLI"           "netlify-cli"
+# #install_npm_package "Cleaver"               "cleaver"
+# #install_npm_package "Marp"                  "@marp-team/marp-cli"
+# install_npm_package "Gulp"                  "gulp"
+# install_npm_package "Prettier"              "prettier"
+# install_npm_package "ESLint"                "eslint"
+# #install_npm_package "Vue CLI"               "@vue/cli"
+# install_npm_package "degit"                 "degit"
+# #install_npm_package "parcel-bundler"       "parcel-bundler"
 
 # Todo install VS Code plugin like this
 # code --install-extension dbaeumer.vscode-eslint
