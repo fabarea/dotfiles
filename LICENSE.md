@@ -1,4 +1,7 @@
-Copyright (c) Cătălin Mariș <http://catalinmaris.com/>
+Copyright (c)
+
+* Fabien Udriot <https://github.com/fabarea/>
+* Cătălin Mariș <http://catalinmaris.com/>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
