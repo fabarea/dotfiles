@@ -23,12 +23,8 @@ brew_install "ShellCheck"                   "shellcheck"
 brew_install "NVM - Node Version Manager"   "nvm"
 #brew_install "PHP 7.3"                     "php@7.3"
 brew_install "PHP latest stable"            "php"
-
-#brew_install "GIMP" "lisanet-gimp" "caskroom/cask" "cask"
-#brew_install "ImageAlpha" "imagealpha" "caskroom/cask" "cask"
-#brew_install "ImageMagick" "imagemagick --with-webp"
-#brew_install "ImageOptim" "imageoptim" "caskroom/cask" "cask"
-#brew_install "LICEcap" "licecap" "caskroom/cask" "cask"
+brew_install "fish"                         "fish"
+brew_install "z"                            "z"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -62,6 +58,12 @@ brew_install "Discord"              "discord"               ""          "cask"
 brew_install "Skype"                "skype"                 ""          "cask"
 brew_install "Boinc"                "boinc"                 ""          "cask"
 brew_install "Karabiner"            "karabiner-elements"    ""          "cask"
+brew_install "Docker"               "docker"                ""          "cask"
+brew_install "ImageOptim"           "imageoptim"            ""          "cask"
+#brew_install "ImageAlpha"           "imagealpha"             ""           "cask" @todo remove me if unused
+
+# Simple animated screen captures
+#brew_install "LICEcap"     "licecap"   "" "cask"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
