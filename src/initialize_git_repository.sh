@@ -21,7 +21,7 @@ initialize_git_repository() {
     if ! is_git_repository; then
 
         # Run the following Git commands in the root of
-        # the dotfiles directory, not in the `os/` directory.
+        # the dotfiles directory, not in the `/` directory.
 
         cd ../../ \
             || print_error "Failed to 'cd ../../'"

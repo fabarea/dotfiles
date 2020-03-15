@@ -22,8 +22,8 @@ terminal:
 
 | OS       | Snippet                                                                                  |
 | :------- | :--------------------------------------------------------------------------------------- |
-| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"`  |
-| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/os/setup.sh)"` |
+| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/setup.sh)"`  |
+| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/setup.sh)"` |
 
 ## Manual steps
 
@@ -63,7 +63,7 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 ## Update
 
 To update the dotfiles you can either run the [`setup`
-script](src/os/setup.sh) or, if you want to just update one particular
+script](src/setup.sh) or, if you want to just update one particular
 part, run the appropriate [`os` script](src/os).
 
 ## Acknowledgements
@@ -110,8 +110,8 @@ ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
 * Rework upgrade script
 
 ```
-~/.dotfiles/src/os/upgrade.sh
-~/.dotfiles/src/os/preference.sh (create it and make it independant)
+~/.dotfiles/src/upgrade.sh
+~/.dotfiles/src/preference.sh (create it and make it independant)
 ```
 * oh-my-zsh is not yet installed on macOS
 * symlink .zshrc on macOS

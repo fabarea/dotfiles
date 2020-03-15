@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-    && source "../src/os/utils.sh"
+    && source "../src/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -19,8 +19,8 @@ main() {
         -type f \
         ! -path '../src/files/curlrc' \
         ! -path '../src/files/inputrc' \
-        ! -path '../src/os/preferences/macos/*.applescript' \
-        ! -path '../src/os/preferences/macos/*.terminal' \
+        ! -path '../src/preferences/macos/*.applescript' \
+        ! -path '../src/preferences/macos/*.terminal' \
         -exec shellcheck \
                 -e SC1090 \
                 -e SC1091 \
