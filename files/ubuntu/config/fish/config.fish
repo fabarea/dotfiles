@@ -24,5 +24,5 @@ alias ddd='date --iso-8601=seconds'
 alias tt='date +"%s"'
 alias pp='make -C ~/pCloudDrive/Fabien/Notes/scripts'
 
-set -gx PATH $HOME/.cargo/bin $HOME/.local/bin $HOME/Sdk/flutter/bin $PATH
+set -gx PATH $HOME/.cargo/bin $HOME/.local/bin $HOME/Sdk/flutter/bin $HOME/.config/composer/vendor/bin/ $PATH
 #status --is-interactive; and source (pyenv init -|psub
