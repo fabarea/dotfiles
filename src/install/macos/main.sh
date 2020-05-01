@@ -23,8 +23,10 @@ brew_install "ShellCheck"                   "shellcheck"
 brew_install "NVM - Node Version Manager"   "nvm"
 #brew_install "PHP 7.3"                     "php@7.3"
 brew_install "PHP latest stable"            "php"
+brew_install "Composer"                     "composer"
 brew_install "fish"                         "fish"
 brew_install "z"                            "z"
+brew_install "zsh-autosuggestions"          "zsh-autosuggestions"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -64,6 +66,7 @@ brew_install "ImageOptim"           "imageoptim"            ""          "cask"
 brew_install "Skitch"               "skitch"                ""          "cask"
 brew_install "LibreOffice"          "libreoffice"           ""          "cask"
 brew_install "SequelPro"            "sequel-pro"            ""          "cask"
+brew_install "OnlyOffice"           "onlyoffice"            ""          "cask"
 #brew_install "ImageAlpha"           "imagealpha"             ""           "cask" @todo remove me if unused
 
 # Simple animated screen captures

@@ -71,6 +71,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git z npm)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
