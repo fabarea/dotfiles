@@ -1,32 +1,27 @@
-# For more information about the configurations used
-# in this file, please see the EditorConfig documentation.
-#
-# http://editorconfig.org
-
+# EditorConfig file
 root = true
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 [*]
-
-charset = utf-8
+indent_style = space
 indent_size = 4
-indent_style = space
-insert_final_newline = true
+end_of_line = lf
+charset = utf-8
 trim_trailing_whitespace = true
+insert_final_newline = true
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[*.php]
+ij_php_space_before_closure_left_parenthesis = false
 
-[*.md]
-
-# Markdown uses the trailing whitespaces.
-# https://daringfireball.net/projects/markdown/syntax#block
-
-trim_trailing_whitespace = false
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-[.travis.yml]
-
+[*.{json,yml,txt,md,sql}]
 indent_size = 2
-indent_style = space
+
+[*.{xml,xlf,xsd}]
+indent_size = 2
+
+[htdocs/typo3conf/ext/speciality/Resources/Public/JavaScript/*.js]
+ij_any_array_initializer_new_line_after_left_brace = false
+ij_javascript_force_semicolon_style = true
+ij_javascript_use_semicolon_after_statement = false
+ij_javascript_space_before_function_left_parenth = false
+ij_javascript_force_quote_style = true
+ij_javascript_use_double_quotes = false
