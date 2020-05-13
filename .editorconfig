@@ -1,4 +1,4 @@
-# EditorConfig file
+# http://editorconfig.org
 root = true
 
 [*]
@@ -17,6 +17,9 @@ indent_size = 2
 
 [*.{xml,xlf,xsd}]
 indent_size = 2
+
+[Makefile]
+indent_style = tab
 
 [htdocs/typo3conf/ext/speciality/Resources/Public/JavaScript/*.js]
 ij_any_array_initializer_new_line_after_left_brace = false
