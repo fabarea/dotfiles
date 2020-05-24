@@ -67,6 +67,8 @@ brew_install "Skitch"               "skitch"                ""          "cask"
 brew_install "LibreOffice"          "libreoffice"           ""          "cask"
 brew_install "SequelPro"            "sequel-pro"            ""          "cask"
 brew_install "OnlyOffice"           "onlyoffice"            ""          "cask"
+brew_install "Itsycal (calendar)"   "itsycal"               ""          "cask"
+brew_install "AppCleaner"           "appcleaner"            ""          "cask"
 #brew_install "ImageAlpha"           "imagealpha"             ""           "cask" @todo remove me if unused
 
 # Simple animated screen captures
