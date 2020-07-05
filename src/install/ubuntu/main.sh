@@ -85,6 +85,7 @@ if [[ $DISPLAY ]]; then
     install_package "PHP SQLite"                "php-sqlite3"
     install_package "Composer (PHP)"            "composer"
     install_package "pip (python3)"             "python3-pip"
+    install_package "BleachBit"                 "bleachbit"
 
     # Snap instllation
     snap_install    "VSCode"                "code"                          "--classic"
@@ -92,7 +93,7 @@ if [[ $DISPLAY ]]; then
     snap_install    "Sublime Text"          "sublime-text"                  "--classic"
     snap_install    "PHPStorm"              "phpstorm"                      "--classic"
     snap_install    "WebStorm"              "webstorm"                      "--classic"
-    snap_install    "PyCharm"               "pycharm-professionnel"         "--classic"
+    snap_install    "PyCharm"               "pycharm-professional"          "--classic"
     snap_install    "DataGrip"              "datagrip"                      "--classic"
     snap_install    "Android Studio"        "android-studio"                "--classic"
     snap_install    "Kubernetes Client"     "kubectl"                       "--classic"
