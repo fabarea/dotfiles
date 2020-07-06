@@ -66,6 +66,9 @@ if [[ $DISPLAY ]]; then
 
     print_in_purple "\n   Applications\n\n"
 
+    install_package "Tilix"                     "tilix"
+    install_package "htop"                      "htop"
+    install_package "SSH serveur"               "openssh-server"
     install_package "VPN IPSec / L2TP"          "network-manager-l2tp"
     install_package "VPN Gnome Preference"      "network-manager-l2tp-gnome"
     install_package "GNOME Shell integration"   "chrome-gnome-shell"
@@ -74,7 +77,6 @@ if [[ $DISPLAY ]]; then
     install_package "VLC"                       "vlc"
     install_package "Folder Color (Nautilus)"   "folder-color"
     install_package "LibreOffice preview"       "unoconv"
-    install_package "Shutter (screenshot)"      "shutter"
     install_package "Virtualbox"                "virtualbox"
     install_package "SQLite"                    "sqlite3"
     install_package "PHP CLI"                   "php-cli"
@@ -89,7 +91,6 @@ if [[ $DISPLAY ]]; then
 
     # Snap instllation
     snap_install    "VSCode"                "code"                          "--classic"
-    snap_install    "Atom"                  "atom"                          "--classic"
     snap_install    "Sublime Text"          "sublime-text"                  "--classic"
     snap_install    "PHPStorm"              "phpstorm"                      "--classic"
     snap_install    "WebStorm"              "webstorm"                      "--classic"
@@ -99,16 +100,12 @@ if [[ $DISPLAY ]]; then
     snap_install    "Kubernetes Client"     "kubectl"                       "--classic"
     # snap_install    "Kubernetes Cluster"    "kubeadm"                     "--classic"
     # snap_install    "Microk8s"              "microk8s"                    "--classic"
-    snap_install    "Helm"                  "helm"                          "--classic"
+    # snap_install    "Helm"                  "helm"                          "--classic"
     snap_install    "GCloud"                "google-cloud-sdk"              "--classic"
-    snap_install    "Mattermost"            "mattermost-desktop"
     snap_install    "Chromium"              "chromium"
     snap_install    "Bitwarden"             "bitwarden"
-    snap_install    "Signal"                "signal-desktop"
     snap_install    "Simple Server"         "serve"
-    snap_install    "Epiphany"              "epiphany"
     snap_install    "Inkscape"              "inkscape"
-    snap_install    "Telegram"              "telegram-desktop"
     snap_install    "OnlyOffice"            "onlyoffice-desktopeditors"
 fi
 

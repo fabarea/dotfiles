@@ -17,21 +17,65 @@ files described in the [`Local Settings`](#local-settings) section.
 
 ## Setup
 
-To set up the `dotfiles` just run the appropriate snippet in the
-terminal:
-
-| OS       | Snippet                                                                                  |
-| :------- | :--------------------------------------------------------------------------------------- |
-| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/fabarea/dotfiles/master/src/setup.sh)"`  |
-| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/fabarea/dotfiles/master/src/setup.sh)"` |
-
-## Manual steps
-
--   Import ssh keys
--   Import gpg keys
--   adjust .gitconfig.local by adding
+To set up the `dotfiles` just run in the terminal:
 
 ```
+# If not already installed on Ubuuntu
+sudo apt install git
+
+git clone https://github.com/fabarea/dotfiles.git .dotfiles
+~/.dotfiles/install.sh
+```
+
+## Additionnal setup
+
+-   change key binding
+-   `sudo` without password for convenience sake
+-   Configure SSH and UFW
+-   adjust .gitconfig.local
+-   adjust .bash.local
+-   Import SSH keys
+-   Import GPG keys
+
+### Change Key bindings
+
+```
+# Tweak
+Swap alt and ctrl
+
+# Tilix
+Paste command
+Copy on select
+
+# Global
+switch program
+```
+
+### sudo without password for convenience sake
+
+```
+sudo visudo
+fabien ALL=(ALL) NOPASSWD:ALL
+```
+
+### Configure SSH + UFW
+
+```
+sudo nano /etc/ssh/ssh_config
+
+# Search and replace
+PasswordAuthentication no
+
+# Restart the service
+sudo systemctl restart ssh
+
+```
+
+### adjust .gitconfig.local
+
+```
+nano ~/.gitconfig.local
+
 [user]
 	name = Fabien Udriot
 	email = fabien@omic.ch
@@ -42,40 +86,38 @@ terminal:
 	gpgsign = true
 ```
 
-## Customize
-
-### Local Settings
-
-The `dotfiles` can be easily extended to suit additional local
-requirements by using the following files:
-
--   `~/.gitconfig.local`
--   `~/.bash.local`
-
-As example
+### adjust .bash.local
 
 ```
+nano ~/.bash.local
+
 #!/bin/bash
 
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 ```
 
-## Update
+### Import ssh keys
 
-To update the dotfiles you can either run the [`setup`
-script](src/setup.sh) or, if you want to just update one particular
-part, run the appropriate [`os` script](src/os).
+```
+# Import SSH key from Cloud Service... Copy / paste bakcup directory
+# Make sure .ssh is initialized
+ssh localhost
 
-## Acknowledgements
+# Import keys into `.ssh` directory
+mv ssh_2020.04.16/* .ssh
+rmdir ssh_2020.04.16
 
-Inspiration and code was taken from many sources, including:
+# Fix permission
+chmod +x ~/.ssh/agent.sh; chmod 700 ~/.ssh/id*
+```
 
--   [Mathias Bynens'](https://github.com/mathiasbynens)
-    [dotfiles](https://github.com/mathiasbynens/dotfiles)
+### Import GPG keys
 
-## License
+```
+# Import GGP from Cloud Service
 
-The code is available under the [MIT license](LICENSE.txt).
+gpg --import 'path/key.asc'
+```
 
 ## TODO #1
 
@@ -112,8 +154,8 @@ ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
 ```
 ~/.dotfiles/src/upgrade.sh
 ~/.dotfiles/src/preference.sh (create it and make it independant)
+
 ```
-* oh-my-zsh is not yet installed on macOS
 * symlink .zshrc on macOS
 * symlink VS Code
 
@@ -121,3 +163,14 @@ ln -s $HOME/.dotfiles/files/phpstorm/templates $HOME/.PhpStorm2019.1/config
 ln -s ~/.dotfiles/files/vs-code/macos/keybindings.json ~/Library/Application\ Support/Code/User/
 ln -s ~/.dotfiles/files/vs-code/macos/settings.json ~/Library/Application\ Support/Code/User/
 ```
+
+## Acknowledgements
+
+Inspiration and code was taken from many sources, including:
+
+-   [Mathias Bynens'](https://github.com/mathiasbynens)
+    [dotfiles](https://github.com/mathiasbynens/dotfiles)
+
+## License
+
+The code is available under the [MIT license](LICENSE.txt).
