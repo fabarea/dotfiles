@@ -104,6 +104,7 @@ alias l='ls -lh'
 alias ll='ls -lah'
 alias j='z'
 alias dd='ddev'
+alias edit='subl'
 
 # NVM Integration
 export NVM_DIR="$HOME/.nvm"
