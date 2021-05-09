@@ -29,7 +29,6 @@
     # Fixup
     fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 
-
     # SHOW
     dfile =  show --pretty="format:" --name-only
     dfiles =  show --name-only
@@ -47,10 +46,6 @@
     pa = !git --no-pager log origin/master..HEAD
     dl = !git --no-pager log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  master..origin/master
     dlp = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p  master..origin/master
-
-    # MISC
-    type = cat-file -t
-    dump = cat-file -p
 
     # Gerrit alias of "git push origin HEAD:refs/for/master" - http://stackoverflow.com/questions/7423893/git-alias-for-headrefs-for-master
     #review = "!f() { git push -u ${1:-origin} HEAD:`git config branch.$(git name-rev --name-only HEAD).merge | sed -e 's@refs/heads/@refs/for/@'`; }; f"
@@ -94,52 +89,6 @@
         git ls-remote --heads "$remote"; \
     }; f"
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Merge GitHub pull request on top of the current branch or,
-    # if a branch name is specified, on top of the specified branch.
-
-    mpr = "!f() { \
-        declare currentBranch=\"$(git symbolic-ref --short HEAD)\"; \
-        declare branch=\"${2:-$currentBranch}\"; \
-        if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
-            git fetch origin refs/pull/$1/head:pr/$1 && \
-            git checkout -B $branch && \
-            git rebase $branch pr/$1 && \
-            git checkout -B $branch && \
-            git merge pr/$1 && \
-            git branch -D pr/$1 && \
-            git commit --amend -m \"$(git log -1 --pretty=%B)\n\nClose #$1\"; \
-        fi \
-    }; f"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Remove the tag with the specified tag name if
-    # exists and tag the latest commit with that name.
-
-    retag = "!f() { \
-        git tag -d "$1" &> /dev/null; \
-        git tag $1; \
-    }; f"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Remove last commits (by default it removes the last commit).
-
-    rlc = "!f() { \
-        declare n=\"${1:-1}\"; \
-        git reset --hard \"HEAD~$n\"; \
-    }; f"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Undo last commits (by default it undoes the last commit).
-
-    ulc = "!f() { \
-        declare n=\"${1:-1}\"; \
-        git reset --soft \"HEAD~$n\"; \
-    }; f"
 
 [color]
 	ui = auto
@@ -235,10 +184,10 @@
 
 [branch "master"]
 	rebase = true
-	#mergeoptions = --ff-only
 
 [rebase]
 	stat = true
+    autosquash = true
 
 [pull]
   rebase = true
